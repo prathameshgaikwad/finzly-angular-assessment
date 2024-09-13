@@ -1,0 +1,10 @@
+<nav>
+  <ul>
+    <li (click)="onMenuSelect('Home')">Home</li>
+    <li (click)="onMenuSelect('Services')">Services</li>
+    <li (click)="onMenuSelect('Contact')">Contact</li>
+  </ul>
+</nav>
+<main [ngClass]="selectedMenu">
+  <h1>{{ message }}</h1>
+</main>
